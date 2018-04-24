@@ -1,0 +1,19 @@
+POla form(wg kolejnosci,poukladac, wywalic nie potrzebe):
+
+mail
+haslo
+1 imie
+2 azwisko 
+3 wiek 
+4 plec
+5 nazwa uzytkownika
+6 mail
+7 haslo
+
+etap 1 wyrobienie konta
+etap 2 wprowadzanie danych
+et uzupelnianie konta (preferencje)
+
+menu:
+books > base,top 10, last added
+news

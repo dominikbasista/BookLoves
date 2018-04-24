@@ -1,0 +1,53 @@
+body{
+    background-image:url("https://static.pexels.com/photos/371954/pexels-photo-371954.jpeg");
+}
+
+.container{
+    height: 5000px;
+    color: white;
+    background-image: url("https://static.pexels.com/photos/371954/pexels-photo-371954.jpeg");
+}
+
+ul {
+
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+
+}
+
+ul li {
+    float:left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    opacity: 0.5;
+
+
+
+}
+
+#logo1{
+
+    font-family: 'Indie Flower', cursive;
+    color: #00A388;
+    font-size: 80px;
+    text-align:center;
+}
+
+#under_logo {
+    font-family: "Indie Flower", cursive;
+    color: #00A388;
+    font-size: 40px;
+    text-align:center;
+}
+
+.footer1 {
+    display: block;
+    background-color:#BEEB9F;
+    font-family: 'Indie Flower', cursive;
+    color: #00A388;
+    font-size: 20px;
+    margin-bottom: 1px;
+}

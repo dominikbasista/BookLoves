@@ -1,0 +1,48 @@
+.container_1 .container {
+
+    background-image: url("https://www.google.pl/search?q=wallpaper+jpg&dcr=0&tbm=isch&imgil=_fdpzjK7zhJpkM%253A%253Bz0Ugc4Qf6WSDTM%253Bhttp%25253A%25252F%25252Ffreehdw.com%25252Fwallpaper%25252Fgolden-sunset-on-the-green-field-150102.html&source=iu&pf=m&fir=_fdpzjK7zhJpkM%253A%252Cz0Ugc4Qf6WSDTM%252C_&usg=__IaAG8PE605XpeRDEeO8gecYMGZg%3D&biw=1268&bih=634&ved=0ahUKEwjmldSZ8bHWAhUJIpoKHRjpCHkQyjcIQw&ei=oGLBWebFPInE6ASY0qPIBw#imgrc=_fdpzjK7zhJpkM:");
+    background-color: #0b2e13;
+    height: 1000px;
+    border:1px solid red;
+}
+
+.logo {
+    background-color: #1b1e21;
+    height: 10%;
+    border:1px solid red;
+}
+
+#under_logo {
+    font-family: ;
+}
+
+.container_2 {
+    background-color: #0b2e13;
+    float: left;
+    border:1px solid red;
+    height: 1em;
+    width: 40%;
+}
+
+.minibox_l{
+    background-color: #0b2e13;
+    float: left;
+    border:1px solid red;
+    height: 1em;
+    width: 40%;
+
+}
+
+.minibox_r {
+    background-color: #28a745;
+    float: right;
+    border:1px solid red;
+    height: 1em;
+    width: 40%;
+}
+
+.footer{
+;
+    background-color: black;
+    border:1px solid red;
+}

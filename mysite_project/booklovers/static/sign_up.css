@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Parker;
+    src: url(Parker.ttf);
+}
+
+#logo2 {
+    font-family:Calibri;
+    color:blue;
+    font-size: 40px;
+    text-align: center;
+
+}
+body {
+
+    background-size:cover;
+    width: 1000px;
+    color:red;
+    font-family: Loma;
+
+}
+
+br {
+    height: 40px;
+}
+
+footer {
+
+    margin-bottom: 0px;
+}
+
+
+}

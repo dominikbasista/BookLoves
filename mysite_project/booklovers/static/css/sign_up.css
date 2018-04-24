@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Parker;
+    src: url(Parker.ttf);
+}
+
+.logo2 {
+    font-family:"DejaVu Sans";
+    color:red;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 150px;
+
+}
+body {
+
+    background-size:cover;
+    width: 1000px;
+    color:red;
+    font-family: Loma;
+
+}
+
+.top_menu {
+
+
+    background-color:#ffd981;
+    height: 40px;
+    width: 100%;
+    padding-top: 30px;
+    border: 1px solid;
+
+}
+
+
+br {
+    height: 40px;
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    position:sticky;
+    margin-bottom: 0;
+}
+
+

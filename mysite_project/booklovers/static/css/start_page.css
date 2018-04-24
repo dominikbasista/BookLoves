@@ -1,0 +1,164 @@
+
+
+body{
+    background-size: cover;
+}
+
+
+.top_menu{
+    z-index: 100;
+    width: 100%;
+    height: 40px;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    background-color: #332525;
+    opacity: 0.8;
+    text-decoration: none;
+    border-bottom:2px solid #750101;
+    text-align: center;
+    color:white;
+    font-family:"Roboto", bold;
+    list-style: none;
+    
+
+}
+
+
+nav ul{
+    z-index: 100;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    
+}
+
+nav ul li {
+    float:left;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: aliceblue;
+    line-height: 40px;
+    text-align: center;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: antiquewhite;
+    
+}
+
+nav ul li ul li {
+    display: none;
+}
+
+nav ul li:hover nav ul li{
+    display: block;
+}
+
+pod_menu {
+    
+    text-decoration: none
+}
+.top_menu_box_right {
+
+    top: 100%;
+    height: 100%;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    text-align: center;
+    color:white;
+    font-family:"Roboto", bold; 
+
+
+}
+
+
+.top_menu_box_left {
+
+    position: absolute;
+    
+    
+    height: 100%;
+    bottom: 10px;
+    right: 10px;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    color:white;
+    font-family:"Roboto", bold;
+    }
+
+nav ol li ol li{
+    color: white;
+    border-right: none;
+}
+
+ol>li{
+
+    float:left;
+    border-right: 1px white solid;
+    height:40px;
+    width: 150px;
+    text-align: center;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Archivo Narrow', sans-serif, bold;
+
+}
+
+ol>li:hover{
+   background-color: #750101;
+}
+
+
+.logo{
+    position: relative;
+    top: 100px;
+    height: 180px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: yellow;*/
+
+
+}
+
+.obrazek{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.media_container{
+    
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 300px;
+
+
+}
+
+
+.media_box {
+    
+    float:right;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+
+    
+}
