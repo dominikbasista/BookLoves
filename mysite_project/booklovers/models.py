@@ -21,7 +21,8 @@ class User(models.Model):
     email =    models.EmailField()
     age =      models.IntegerField()
     gender = models.CharField(max_length=50)
-
+class Post:
+    pass
 
 class Author(models.Model):
     name =     models.CharField(max_length=200)
@@ -32,28 +33,9 @@ class Author(models.Model):
     def __str__(self):
         return self.name+" "+self.surname
 
-class Post():
-    author = models.ForeignKey("auth.User")
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    published_date=models.DateTimeField(blank=True,null=True)
-
-    def publish(self):
-        self.published_date=timezone.now()
-        self.save()
-
-
-    def approve_coments(self):
-        return self.comments.filter(approved_coments=True)
-
-    def get_absolutle_url(self):
-        return reverse("post_detail",{"pk":self.pk})
-
-    def __str__(self):
-        return self.title
 
 class Comment():
-    post=models.ForeignKey('blog.Post',related_name="comments")
+    post=models.ForeignKey('blog.Post',related_name="comments",on_delete=True)
     author=models.CharField(max_length=200)
     text=models.TextField()
     create_date=models.DateTimeField(default=timezone.now())

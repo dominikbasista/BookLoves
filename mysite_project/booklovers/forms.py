@@ -1,5 +1,17 @@
 from django import forms
-from mysite_project.booklovers.models import Post,Comment
+from mysite_project.booklovers.models import Post, Comment, User
+from django.shortcuts import render,redirect
+
+class SignUpForm(forms.ModelForm):
+    password = forms.CharField(widget=forms.PasswordInput)
+    class Meta:
+        model = User
+        fields = ["name","surname","username","age","gender","password"]
+
+
+
+
+
 
 class PostForm(forms.ModelForm):
 

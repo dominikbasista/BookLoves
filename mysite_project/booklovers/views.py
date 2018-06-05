@@ -7,19 +7,47 @@ from mysite_project.booklovers.forms import PostForm
 from django.urls import reverse_lazy
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import UserCreationForm
+from django.shortcuts import render
+from django.contrib.auth import authenticate,login
+from django.views.generic import View
+from .forms import SignUpForm
 
 # Create your views here.
 
-class AboutView(TemplateView):
-     template_name="start.html"
+class SignUpView(View):
+    form_class = SignUpForm
+    template_name = "templates.sign_up.html"
+    #wyswietla formulaz
+    def get(self,request):
+        form = self.form_class(None)
+        return render(request, self.template_name, {"form":form})
+    def post(self,request):
+        form = self.form_class(request.POST)
+        if form.is_valid():
+            user = form.save(commit=False)
 
+            name = form.cleaned_data("name")
+            surname = form.cleaned_data("surname")
+            username = form.cleaned_data("username")
+            age = form.cleaned_data("age")
+            gender = form.cleaned_data("gender")
+            password = form.cleaned_data("password")
+
+            user.save()
+
+
+
+
+class AboutView(TemplateView):
+     template_name="about.html"
 
 class BooksListView(ListView):
 
     model = Book
 
     def get_query_set(self):
-        return Book.object.filter(realise_date__lte = timezone.now().order_by('-realise_date'))
+        return Book.object.filter(realise_date__lte=timezone.now().order_by('-realise_date'))
     #na górze jest to rodzaj zapytania sql wykonywane przez django mówi: zlap oboekt klasy Book
     #
     # __lte = lest then or equal
